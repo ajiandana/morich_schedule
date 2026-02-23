@@ -1,0 +1,56 @@
+*.log
+.DS_Store
+Thumbs.db
+
+# Env files (never commit)
+.env
+.env.*
+!.env.example
+
+# PHP / Laravel
+/vendor
+/auth.json
+.phpunit.result.cache
+/.phpunit.cache
+
+# Laravel storage (runtime)
+# keep folder structure via .gitignore files if you have them
+/storage/*.key
+/storage/pail
+/storage/app/*
+!/storage/app/.gitignore
+!/storage/app/public
+/storage/app/public/*
+!/storage/app/public/.gitignore
+
+/storage/framework/cache/*
+!/storage/framework/cache/.gitignore
+/storage/framework/sessions/*
+!/storage/framework/sessions/.gitignore
+/storage/framework/testing/*
+!/storage/framework/testing/.gitignore
+/storage/framework/views/*
+!/storage/framework/views/.gitignore
+
+/storage/logs/*
+!/storage/logs/.gitignore
+
+# Node / Vite
+/node_modules
+/public/build
+/public/hot
+
+# storage:link output (symlink)
+#/public/storage
+/public/storage
+
+# Local tooling
+Homestead.json
+Homestead.yaml
+
+# Editors / IDE
+/.fleet
+/.idea
+/.nova
+/.vscode
+/.zed
